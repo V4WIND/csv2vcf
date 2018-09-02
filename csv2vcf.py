@@ -51,7 +51,7 @@ def convert_to_vcard(input_file, single_output, input_file_format):
                 print 'ROLE:' + ROLE_VAL
                 print 'URL:' + URL_VAL
                 print 'END:VCARD'
-                print '----------------------'
+                print '\n'
 
                 # write the single file
                 single_vcf.write( 'BEGIN:VCARD' + "\n")
@@ -71,8 +71,7 @@ def convert_to_vcard(input_file, single_output, input_file_format):
                 i += 1
 
             single_vcf.close()
-            print str(i) + " VCARDS written"
-            print '----------------------'
+            print '\n'
 
     # default ( multi-file output )
     else :
@@ -102,7 +101,7 @@ def convert_to_vcard(input_file, single_output, input_file_format):
                 print 'ROLE:' + ROLE_VAL
                 print 'URL:' + URL_VAL
                 print 'END:VCARD'
-                print '----------------------'
+                print '\n'
 
                 # write each entry
                 each_vcf = open('csv2vcf/' + FN_VAL + '_' + TEL_VAL + ".vcf", 'w')
@@ -122,9 +121,7 @@ def convert_to_vcard(input_file, single_output, input_file_format):
                 each_vcf.close()
 
                 i += 1
-
-            print str(i) + " VCARDS written"
-            print '----------------------'
+            print '\n'
 
 
 def main(args):

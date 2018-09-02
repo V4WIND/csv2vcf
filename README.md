@@ -1,8 +1,8 @@
+# Instruction for koss, add numbers in contact.csv and open in terminal and then enter make. that's it.
 # csv2vcf
 csv2vcf is a small command line tool to convert CSV files to VCard (.vcf) files.
 
 ## Usage :
-
 Go to terminal or command prompt and type :
 
 ```
